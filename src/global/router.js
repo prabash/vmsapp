@@ -5,6 +5,7 @@ import {
 } from "react-navigation";
 import Login from "../components/login/login";
 import Home from "../components/home/home";
+import CheckInVisitor from "../components/check-in-visitor/check-in-visitor"
 
 export const SignedOut = createStackNavigator(
   {
@@ -19,6 +20,7 @@ export const SignedOut = createStackNavigator(
 
 export const SignedIn = createStackNavigator(
   {
+    CheckInVisitor: CheckInVisitor,
     Home: Home
   },
   {
