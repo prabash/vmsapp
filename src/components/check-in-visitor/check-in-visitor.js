@@ -10,8 +10,8 @@ import {
   ImageBackground
 } from "react-native";
 import { Icon } from "react-native-elements";
-import { onSignIn } from "../../global/auth";
-import { login } from "../../services/login-service";
+import { registerUserToken } from "../../services/notification-service";
+import { checkinVisitor } from "../../services/checkin-service";
 
 export default class CheckInVisitor extends Component {
   constructor(props) {
@@ -19,9 +19,19 @@ export default class CheckInVisitor extends Component {
     this.state = {};
   }
 
-  checkinVisitor = () => {
-      alert("Visitor Checked-In");
+  componentDidMount() {
+    console.log(" +++++ CHECKIN NOTIF TOKEN " + global.notifToken);
+    registerUserToken("Steven", global.notifToken).then(res => {
+      // get the service data
+      const serviceData = res.data;
+      console.log("+++  REGISTER DEVICE RESPONSE : " + serviceData);
+    });
   }
+
+  checkinVisitor = () => {
+    checkinVisitor("Steven", "Visitor 1")
+    alert("Visitor Checked-In");
+  };
 
   render() {
     return (
@@ -236,7 +246,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     backgroundColor: global.backgroundColor
   },
-  headerContainer:{
+  headerContainer: {
     backgroundColor: "#187F73",
     height: 100,
     justifyContent: "center",

@@ -17,3 +17,4 @@ global.prPendingFilterColor = "#f1c40f";
 global.prApprovedFilterColor = "#20bf6b";
 global.prRejectedFilterColor = "#fc5c65";
 global.prTakeValue = 20;
+global.notifToken = "";

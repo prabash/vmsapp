@@ -11,6 +11,7 @@ import React, { Component } from "react";
 import { isSignedIn } from "./src/global/auth";
 import { createRootNavigator } from "./src/global/router";
 import { ToastAndroid } from "react-native";
+import "./src/global/global";
 
 var PushNotification = require("react-native-push-notification");
 
@@ -18,7 +19,8 @@ PushNotification.configure({
   // (optional) Called when Token is generated (iOS and Android)
   onRegister: function(token) {
     //alert('test');
-    console.log("+++++++++++++ FULL TOKEN:", token);
+    console.log("+++++++++++++ FULL TOKEN:", token.token);
+    global.notifToken = token.token;
     //saveNotifToken(token.token).then(() => console.log("TOKEN:", token.token));
   },
 
