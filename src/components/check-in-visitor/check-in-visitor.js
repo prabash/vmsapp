@@ -59,7 +59,7 @@ export default class CheckInVisitor extends Component {
                 autoCorrect={false}
               />
             </View>
-            <View style={styles.inputContainer}>
+            {/* <View style={styles.inputContainer}>
               <Icon
                 name="email"
                 type="material"
@@ -70,11 +70,11 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Email Address"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
-            </View>
-            <View style={styles.inputContainer}>
+            </View> */}
+            {/* <View style={styles.inputContainer}>
               <Icon
                 name="call"
                 type="material"
@@ -85,11 +85,11 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Contact No"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
-            </View>
-            <View style={styles.inputContainer}>
+            </View> */}
+            {/* <View style={styles.inputContainer}>
               <Icon
                 name="domain"
                 type="material"
@@ -100,10 +100,10 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Company Name"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
-            </View>
+            </View> */}
             <View style={styles.inputContainer}>
               <Icon
                 name="face"
@@ -115,11 +115,11 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Person to Meet"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
             </View>
-            <View style={styles.inputContainer}>
+            {/* <View style={styles.inputContainer}>
               <Icon
                 name="face"
                 type="material"
@@ -130,11 +130,11 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Purpose"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
-            </View>
-            <View style={styles.inputContainer}>
+            </View> */}
+            {/* <View style={styles.inputContainer}>
               <Icon
                 name="card-travel"
                 type="material"
@@ -145,7 +145,7 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Carry In Items"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
             </View>
@@ -160,11 +160,11 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Car License Plate"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
-            </View>
-            <View style={styles.inputContainer}>
+            </View> */}
+           <View style={styles.inputContainer}>
               <Icon
                 name="portrait"
                 type="material"
@@ -175,7 +175,7 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Visitor Badge No."
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
             </View>
@@ -190,7 +190,7 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="No. of Pax"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
             </View>
@@ -205,7 +205,7 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Check-In Date"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
             </View>
@@ -220,7 +220,7 @@ export default class CheckInVisitor extends Component {
                 style={styles.input}
                 placeholder="Check-In Time"
                 placeholderTextColor={global.foregroundColor}
-                secureTextEntry
+                
                 returnKeyType="go"
               />
             </View>
