@@ -119,7 +119,7 @@ export default class CheckInVisitor extends Component {
                 returnKeyType="go"
               />
             </View>
-            {/* <View style={styles.inputContainer}>
+            <View style={styles.inputContainer}>
               <Icon
                 name="face"
                 type="material"
@@ -133,7 +133,7 @@ export default class CheckInVisitor extends Component {
                 
                 returnKeyType="go"
               />
-            </View> */}
+            </View>
             {/* <View style={styles.inputContainer}>
               <Icon
                 name="card-travel"
